@@ -107,10 +107,11 @@ body {
 
 .lang {
     width: 90px;
-    -webkit-transition: all 0.3s ease;;
-    -moz-transition: all 0.3s ease;;
-    -o-transition: all 0.3s ease;;
-    transition: all 0.3s ease;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    transition: all .2s linear;
 }
 
 .block-lang {
@@ -127,11 +128,16 @@ body {
     padding-left: 9px;
     padding-top: 16px;
     padding-bottom: 16px;
+    -ms-transform: translateX(132px);
+    -moz-transform: translateX(132px);
+    -o-transform: translateX(132px);
+    -webkit-transform: translateX(132px);
     transform: translateX(132px);
-    -webkit-transition: all 0.5s ease;;
-    -moz-transition: all 0.5s ease;;
-    -o-transition: all 0.5s ease;;
-    transition: all 0.5s ease;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    transition: all .3s linear;
 }
 
 .block-lang-link {
@@ -143,10 +149,11 @@ body {
     text-transform: uppercase;
     color: #70004E;
     text-decoration: none;
-    -webkit-transition: all 0.1s ease;;
-    -moz-transition: all 0.1s ease;;
-    -o-transition: all 0.1s ease;;
-    transition: all 0.1s ease;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    -ms-transition: all .1s linear;
+    transition: all .1s linear;
 }
 
 .block-lang-link:hover {
@@ -155,13 +162,19 @@ body {
 
 .header-button:hover .lang {
     width: 0;
-    -webkit-transform: rotateZ(360deg);
     -ms-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
     transform: rotateZ(360deg);
 }
 
 .header-button:hover .block-lang {
-    transform: translateX(0);
+    -ms-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
 }
 
 .glass {
@@ -206,6 +219,10 @@ body {
     text-transform: uppercase;
     color: #70004E;
     text-decoration: none;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    -ms-transition: all .1s linear;
     transition: all .1s linear;
 }
 
@@ -245,6 +262,10 @@ body {
     text-transform: lowercase;
     color: #70004E;
     text-decoration: none;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    -ms-transition: all .1s linear;
     transition: all .1s linear;
 }
 
@@ -330,7 +351,18 @@ body {
     border: 10px solid #0B8AF3;
     border-radius: 50%;
     cursor: pointer;
+    outline: 0;
+    animation: shadow-button-mail 1s infinite alternate;
 }
+
+@keyframes shadow-button-mail {
+    from {
+      box-shadow: 0 0 25px 10px #0B8AF3;
+    }
+    to {
+      box-shadow: 0 0 50px 20px #0B8AF3;
+    }
+  }
 
 .button-mail-text {
     font-family: 'geBody', sans-serif;
@@ -341,6 +373,15 @@ body {
     text-transform: uppercase;
     color: #70004E;
     vertical-align: middle;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.button-mail:hover .button-mail-text {
+    color: #0B8AF3;
 }
 
 /* Main End */
