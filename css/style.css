@@ -29,6 +29,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    overflow: hidden;
 }
 
 .header-title {
@@ -362,14 +363,23 @@ body {
     to {
       box-shadow: 0 0 50px 20px #0B8AF3;
     }
-  }
+}
+
+.button-mail-inner {
+    display: flex;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    border: 10px solid #F99D46;
+    border-radius: 50%;
+}
 
 .button-mail-text {
     font-family: 'geBody', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 26px;
-    line-height: 19px;
+    font-size: 24px;
+    line-height: 25px;
     text-transform: uppercase;
     color: #70004E;
     vertical-align: middle;
