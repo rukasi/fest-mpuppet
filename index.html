@@ -6,11 +6,12 @@
     <title>X Международный фестиваль театров кукол стран баренцева региона</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="header">
-        <div class="header-title">
+        <div class="header-title wow animate__animated animate__fadeIn" data-wow-delay="0.1s">
             <span class="header-title-text purple">X Международный фестиваль</span>
             <span class="header-title-text orange">Театров кукол</span>
             <span class="header-title-text blue">Стран баренцева региона</span>
@@ -18,8 +19,8 @@
             <span class="header-title-text violet">мурманск 2020</span>
         </div>
         <!-- /. header-title -->
-        <img src="./img/logo.svg" alt="Логотип" class="header-logo">
-        <div class="header-buttons">
+        <img src="./img/logo.svg" alt="Логотип" class="header-logo wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
+        <div class="header-buttons wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
             <button class="header-button">
                 <img src="./img/lang.svg" alt="Выбор языка" class="lang">
                 <div class="block-lang">
@@ -37,7 +38,7 @@
         
     </header>
 
-    <nav class="nav">
+    <nav class="nav animate__animated animate__fadeIn">
         <ul class="nav-menu">
             <li class="menu-li"><a href="#" class="menu-link">главная</a></li>
             <!-- /.menu-li -->
@@ -72,15 +73,16 @@
         <!-- /.nav-menu -->
     </nav>
     
-    <main class="main">
+    <main class="main wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
         <div class="content">
-            <div class="home-title">
+            <div class="home-title wow animate__animated animate__fadeIn" data-wow-delay="0.6s">
                 <span class="home-title-text violet">X международный фестиваль</span>
                 <span class="home-title-text blue">театров кукол стран баренцева региона</span>
                 <span class="home-title-text violet">X international puppet theatre festival of the barents region</span>
                 <span class="home-title-date blue">13 - 17 октября 2021 года</span>
             </div>
-            <div class="home-banner">
+            <!-- /.home-title -->
+            <div class="home-banner wow animate__animated animate__fadeIn" data-wow-delay="0.9s">
                 <img src="./img/home-banner.jpg" alt="" class="home-banner-img">
                 <button class="button-mail">
                     <div class="button-mail-inner">
@@ -88,6 +90,41 @@
                     </div>                    
                 </button>
             </div>
+            <!-- /.home-banner -->
+            <div class="last-block">
+                <div class="last-news">
+                    <h2 class="last-news-title">новости:</h2>
+                    <div class="last-news-items">
+                        <div class="last-news-item">
+                            <span class="last-news-date">24.03.2020 15:56</span>
+                            <a href="#" class="last-news-link">
+                                <h3 class="last-news-text">
+                                    Уважаемые зрители! Руководством театра принято предварительное решение о дате проведения X Международного фестиваля театров кукол стран Баренцева региона. Фестиваль состоится в Мурманске в 2021 году с 13-17 октября!
+                                </h3>
+                            </a>
+                        </div>
+                        <!-- /.last-news-item -->
+                    </div>
+                    <!-- /.last-news-items -->
+                </div>
+                <!-- /.last-news -->
+                <div class="last-spec">
+                    <h2 class="last-spec-title">мероприятия</h2>
+                    <span class="last-spec-date">14 сентября</span>
+                    <div class="last-spec-items">
+                        <div class="last-spec-item">
+                            <span class="last-spec-time">11:30</span>
+                            <h3 class="last-spec-text">
+                                Театр кукол. Торжественное открытие
+                            </h3>
+                        </div>
+                        <!-- /.last-spec-item -->
+                    </div>
+                    <!-- /.last-spec-items -->
+                </div>
+                <!-- /.last-spec -->
+            </div>
+            <!-- /.last-block -->
         </div>
         <!-- /.content -->
     </main>
@@ -95,5 +132,11 @@
     <footer class="footer">
 
     </footer>
+
+    <!-- Wow -->
+    <script src="js/wow.min.js"></script>
+
+    <!-- Main -->
+    <script src="./js/main.js"></script>
 </body>
 </html>

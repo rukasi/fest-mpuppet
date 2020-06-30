@@ -300,7 +300,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
+    padding: 50px;
 }
 
 .home-title {
@@ -336,6 +336,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .home-banner-img {
@@ -358,10 +359,10 @@ body {
 
 @keyframes shadow-button-mail {
     from {
-      box-shadow: 0 0 25px 10px #0B8AF3;
+        box-shadow: 0 0 25px 10px #0B8AF3;
     }
     to {
-      box-shadow: 0 0 50px 20px #0B8AF3;
+        box-shadow: 0 0 50px 20px #0B8AF3;
     }
 }
 
@@ -401,6 +402,31 @@ body {
 
 .button-mail:hover .button-mail-inner {
     border: 0px solid #F99D46;
+}
+
+.last-block {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.last-news {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+
+
+
+.last-spec {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Main End */
